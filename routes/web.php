@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\RfidController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +36,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('rfid', [RfidController::class, 'create'])->name('rfid');
+
+Route::post('rfid', [RfidController::class, 'store']);
+
+require __DIR__ . '/auth.php';
