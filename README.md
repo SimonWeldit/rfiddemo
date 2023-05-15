@@ -1,9 +1,5 @@
 # RFID login system
 
----
-colorlinks: true
----
-
 ## How it works
 It's fairly simple. Each RFID tag has a number. When a tag gets scanned, it
 fills the tag's number into the focused field and hits enter. When you do this
