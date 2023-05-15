@@ -26,5 +26,3 @@ avoided.
 
 ## Links
 [Login method used in Laravel](https://laravel.com/docs/10.x/authentication#authenticate-a-user-by-id)
-
-[GitHub repo(requires authentication)](https://github.com/SimonWeldit/weldcourse)
